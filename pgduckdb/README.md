@@ -1,0 +1,1 @@
+ALTER ROLE postgres SET duckdb.force_execution TO true;

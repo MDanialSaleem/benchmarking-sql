@@ -1,0 +1,9 @@
+services:
+  pgduckdb:
+    image: pgduckdb/pgduckdb:16-main
+    container_name: pgduckdb
+    environment:
+      - POSTGRES_PASSWORD=duckdb
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
